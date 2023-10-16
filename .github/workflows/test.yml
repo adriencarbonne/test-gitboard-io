@@ -29,6 +29,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      - name: Try to fail
+        run: exit 1
+      
       - uses: gitboard-io/gitboard-action@main
         with:
           username: adriencarbonne
